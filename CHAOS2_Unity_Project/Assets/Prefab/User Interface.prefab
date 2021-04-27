@@ -202,7 +202,7 @@ RectTransform:
   m_GameObject: {fileID: 847310629964008173}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2110778, y: 0.2211239, z: 0.5207817}
+  m_LocalScale: {x: 1.0345511, y: 0.18889289, z: 0.44487256}
   m_Children:
   - {fileID: 6483958243851238837}
   - {fileID: 6009021119474326655}
@@ -210,9 +210,9 @@ RectTransform:
   m_Father: {fileID: 6281734196587922902}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -194.4, y: 90.3}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 75.4, y: -28.2}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8044672178995388616
@@ -278,6 +278,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 027fe20dd66104da78ccbc7663f9706a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slider: {fileID: 8044672178995388616}
+  gradient:
+    serializedVersion: 2
+    key0: {r: 0.9607843, g: 0.12781589, b: 0.050980415, a: 1}
+    key1: {r: 0.86589146, g: 0.9528302, b: 0.0764062, a: 1}
+    key2: {r: 0.041251317, g: 0.9716981, b: 0.053966057, a: 0}
+    key3: {r: 0.041251317, g: 0.9716981, b: 0.053966057, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 19275
+    ctime1: 45682
+    ctime2: 65535
+    ctime3: 65535
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 1
+    m_NumColorKeys: 3
+    m_NumAlphaKeys: 2
+  fill: {fileID: 3987766594215734684}
 --- !u!1 &3809719909574289255
 GameObject:
   m_ObjectHideFlags: 0

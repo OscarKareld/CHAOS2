@@ -18,9 +18,10 @@ public class MushroomGrowth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float growth = Time.deltaTime * 100;
         counter++;
         if ((counter % 100) == 0) {
-            transform.localScale = new Vector3(x++, y++, z++);
+            transform.localScale = new Vector3(x += growth, y += growth, z += growth);
         }
     }
 }

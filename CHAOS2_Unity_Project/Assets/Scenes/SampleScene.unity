@@ -166,6 +166,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &965889490 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8752498527385396172, guid: 3e66642599432284687d270c9d841beb, type: 3}
+  m_PrefabInstance: {fileID: 7322427347260286337}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 027fe20dd66104da78ccbc7663f9706a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1528892780 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4954189906636218064, guid: e634838007cfbe445bc3fe938a185726, type: 3}
@@ -625,6 +636,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car - Player
       objectReference: {fileID: 0}
+    - target: {fileID: 929452996215649732, guid: fc9a514914c174b499eb91e76fe29b05, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 965889490}
     - target: {fileID: 1223053221768159067, guid: fc9a514914c174b499eb91e76fe29b05, type: 3}
       propertyPath: m_RootOrder
       value: 8

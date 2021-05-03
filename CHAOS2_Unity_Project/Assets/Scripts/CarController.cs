@@ -34,7 +34,28 @@ public class CarController : MonoBehaviour
     void TakeDamage(int damage)
     {
         currentHealth -= damage;
-
-        healthBar.SetHealth(currentHealth);
+        if (CheckHealth())
+        {
+            healthBar.SetHealth(currentHealth);
+        }
+        Debug.Log("Car health is " + currentHealth);
     }
+
+    public void IncrementHealth(int damage)
+    {
+        if (CheckHealth()) {
+            currentHealth += damage;
+            healthBar.SetHealth(currentHealth);
+        }
+        Debug.Log("Car health is " + currentHealth);
+    }
+    
+    public bool CheckHealth()
+    {
+        if (currentHealth <= 0 || currentHealth == 20)
+            return false;
+        else
+            return true;
+    }
+
 }

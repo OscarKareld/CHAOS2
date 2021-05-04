@@ -11,7 +11,7 @@ public class CarController : MonoBehaviour
     public float horizontalInput;
     public float forwardInput;
 
-    public int maxHealth = 20;
+    public int maxHealth = 50;
     public int currentHealth;
     public HealthBar healthBar;
     private float oldVel;
@@ -65,7 +65,7 @@ public class CarController : MonoBehaviour
     
     public bool CheckHealth()
     {
-        if (currentHealth <= 0 || currentHealth == 20)
+        if (currentHealth <= 0 || currentHealth == maxHealth)
             return false;
         else
             return true;

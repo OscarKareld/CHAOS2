@@ -54,13 +54,13 @@ public class CarController : MonoBehaviour
         Debug.Log("Car health is " + currentHealth);
     }
 
-    public void IncrementHealth(int damage)
+    public void IncrementHealth(int healthPoints)
     {
         if (CheckHealth()) {
-            currentHealth += damage;
+            currentHealth += healthPoints;
             healthBar.SetHealth(currentHealth);
         }
-        Debug.Log("Car health is " + currentHealth);
+        Debug.Log("IncHealth: Car health is " + currentHealth);
     }
     
     public bool CheckHealth()

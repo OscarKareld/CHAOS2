@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+[RequireComponent(typeof(Rigidbody))]
 
 public class CarController : MonoBehaviour
 {
-    public float speed;
+    public float acceleration = 20.0f;
+    public Rigidbody m_rigidbody;
     public float turnSpeed;
     public float horizontalInput;
     public float forwardInput;
@@ -18,6 +20,8 @@ public class CarController : MonoBehaviour
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+
+        m_rigidbody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -26,9 +30,16 @@ public class CarController : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         forwardInput = Input.GetAxis("Vertical");
 
-        transform.Translate(Vector3.forward*Time.deltaTime * speed * forwardInput);
+        Vector3 vel = m_rigidbody.velocity;
+       // vel += transform.right * horizontalInput * acceleration * Time.deltaTime;
+       // vel.y += 0;
+        vel += transform.forward*forwardInput * acceleration * Time.deltaTime;
+
+        //transform.Translate(Vector3.forward*Time.deltaTime * speed * forwardInput);
         //transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horizontalInput);
         transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
+
+        m_rigidbody.velocity = vel;
     }
 
     void TakeDamage(int damage)

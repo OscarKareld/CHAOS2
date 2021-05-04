@@ -15,7 +15,7 @@ public class Spawner : MonoBehaviour
         if (cooldown <= 0)
         {
             cooldown += spawnDelay;
-            GameObject.Instantiate(spawnObject, new Vector3(0, 0, 0), Quaternion.identity);
+            GameObject.Instantiate(spawnObject, new Vector3(Random.Range(-7f, 13f), 0, Random.Range(-7f, 13f)), Quaternion.identity);
         }
         cooldown -= Time.deltaTime;
     }

@@ -24,4 +24,10 @@ public class MushroomGrowth : MonoBehaviour
             transform.localScale = new Vector3(x += growth, y += growth, z += growth);
         }
     }
+
+    void OnCollisionEnter(Collision otherObj) {
+    if (0 == 0) { //otherObj.gameObject.tag == "Car"
+        Destroy(gameObject,.5f);
+    }
+}
 }

@@ -16,6 +16,7 @@ public class WheelController : MonoBehaviour
     {
         if (car.transform.gameObject.CompareTag("Car"))
         {
+            Debug.Log("Inne i första if-satsen");
             CarController cc = car.transform.GetComponentInChildren<CarController>();
             if (cc != null)
             {

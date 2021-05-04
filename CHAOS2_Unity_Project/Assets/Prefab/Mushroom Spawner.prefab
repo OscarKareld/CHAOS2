@@ -45,3 +45,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnObject: {fileID: 4864489132492250461, guid: 4e6ee85a7a8f617439c375fcc09bb022, type: 3}
   spawnDelay: 10
+  offset: 0
+  x_min: -9
+  x_max: 9
+  z_min: -9
+  z_max: 9

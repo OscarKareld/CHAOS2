@@ -16,17 +16,16 @@ public class Crashable : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.tag == "Car")
+        if (collision.transform.tag == "Car")
         {
-            GameObject car = other.gameObject;
+            GameObject car = collision.gameObject;
             CarController carController = car.GetComponent<CarController>();
-   
             carController.TakeDamage(1);
-        
+
         }
     }
-
 
 }

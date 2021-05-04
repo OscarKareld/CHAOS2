@@ -14,6 +14,7 @@ public class CarController : MonoBehaviour
     public int maxHealth = 20;
     public int currentHealth;
     public HealthBar healthBar;
+    private float oldVel;
 
     // Start is called before the first frame update
     void Start()
@@ -40,11 +41,12 @@ public class CarController : MonoBehaviour
         transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
 
         m_rigidbody.velocity = vel;
+       oldVel = m_rigidbody.velocity.magnitude;
     }
 
     public void TakeDamage(int damage)
     {
-        currentHealth -= damage;
+        currentHealth -= Mathf.Clamp((int)(damage* oldVel*0.6),1,5);
         if (CheckHealth())
         {
             healthBar.SetHealth(currentHealth);

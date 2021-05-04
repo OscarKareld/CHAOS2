@@ -42,7 +42,7 @@ public class CarController : MonoBehaviour
         m_rigidbody.velocity = vel;
     }
 
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         if (CheckHealth())

@@ -662,6 +662,10 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 112
       objectReference: {fileID: 0}
+    - target: {fileID: 4068358023332837792, guid: fc9a514914c174b499eb91e76fe29b05, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 965889490}
     m_RemovedComponents:
     - {fileID: 6114656262023829762, guid: fc9a514914c174b499eb91e76fe29b05, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fc9a514914c174b499eb91e76fe29b05, type: 3}

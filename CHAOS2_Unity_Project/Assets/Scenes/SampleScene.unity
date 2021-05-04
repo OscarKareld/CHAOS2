@@ -602,6 +602,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car - Player
       objectReference: {fileID: 0}
+    - target: {fileID: 794813607932336061, guid: fc9a514914c174b499eb91e76fe29b05, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 794813607932336061, guid: fc9a514914c174b499eb91e76fe29b05, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 929452996215649732, guid: fc9a514914c174b499eb91e76fe29b05, type: 3}
       propertyPath: healthBar
       value: 
@@ -616,7 +624,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1223053221768159067, guid: fc9a514914c174b499eb91e76fe29b05, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.32
       objectReference: {fileID: 0}
     - target: {fileID: 1223053221768159067, guid: fc9a514914c174b499eb91e76fe29b05, type: 3}
       propertyPath: m_LocalPosition.z

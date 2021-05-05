@@ -14,6 +14,7 @@ public class CarController : MonoBehaviour
     public int maxHealth = 50;
     public int currentHealth;
     public HealthBar healthBar;
+    public GameOver gameOver;
     private float oldVel;
 
     // Start is called before the first frame update
@@ -65,8 +66,12 @@ public class CarController : MonoBehaviour
     
     public bool CheckHealth()
     {
-        if (currentHealth <= 0 || currentHealth == maxHealth)
+        if (currentHealth == maxHealth)
             return false;
+        else if (currentHealth <= 0) { 
+            gameOver.SetPosition(0);
+            return false;
+        }
         else
             return true;
     }

@@ -21,7 +21,7 @@ public class WheelController : MonoBehaviour
             if (cc != null)
             {
                 Debug.Log("collided with");
-                cc.IncrementHealth(1);
+                cc.IncrementHealth(10);
             }         
             Destroy(gameObject);
         }

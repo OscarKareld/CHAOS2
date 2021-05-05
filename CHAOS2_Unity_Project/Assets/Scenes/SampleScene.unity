@@ -182,6 +182,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5798539cafb83467cb3411a8ff0e2bb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &728356117 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -2545638162909973340, guid: 0998850cc1b7b4ee3989c143ace6a7dd, type: 3}
+  m_PrefabInstance: {fileID: 5764511279143681293}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f5e34f8cbd514e1fb2291a106801da2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &965889490 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8752498527385396172, guid: 3e66642599432284687d270c9d841beb, type: 3}
@@ -586,6 +597,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2545638162909973340, guid: 0998850cc1b7b4ee3989c143ace6a7dd, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 660719187}
     - target: {fileID: 570652399220018262, guid: 0998850cc1b7b4ee3989c143ace6a7dd, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -727,6 +742,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 965889490}
+    - target: {fileID: 4068358023332837792, guid: fc9a514914c174b499eb91e76fe29b05, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 728356117}
     m_RemovedComponents:
     - {fileID: 6114656262023829762, guid: fc9a514914c174b499eb91e76fe29b05, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fc9a514914c174b499eb91e76fe29b05, type: 3}

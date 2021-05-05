@@ -9,6 +9,6 @@ public class GameOver : MonoBehaviour
 
     public void SetPosition(int position)
     {
-        transform.position = new Vector3(400, 200, 0);
+        transform.position = new Vector3((position*2), position, 0);
     }
 }

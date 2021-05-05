@@ -83,6 +83,8 @@ MonoBehaviour:
   maxHealth: 20
   currentHealth: 0
   healthBar: {fileID: 0}
+  gameOver: {fileID: 0}
+  gameManager: {fileID: -2545638162909973340, guid: 0998850cc1b7b4ee3989c143ace6a7dd, type: 3}
 --- !u!64 &2899701754905010447
 MeshCollider:
   m_ObjectHideFlags: 0

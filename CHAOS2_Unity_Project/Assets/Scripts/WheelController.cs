@@ -12,18 +12,18 @@ public class WheelController : MonoBehaviour
   
     }
 
-    private void OnTriggerEnter(Collider car)
+    private void OnTriggerEnter(Collider collider)
     {
-        if (car.transform.gameObject.CompareTag("Car"))
+        if (collider.tag == "Car")
         {
-            Debug.Log("Inne i första if-satsen");
-            CarController cc = car.transform.GetComponentInChildren<CarController>();
-            if (cc != null)
+            GameObject car = collider.gameObject;
+            CarController carcontroller = car.GetComponentInParent<CarController> ();
+            if (carcontroller != null)
             {
                 Debug.Log("collided with");
-                cc.IncrementHealth(10);
+                carcontroller.IncrementHealth(10);
             }         
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         }
     }
 }

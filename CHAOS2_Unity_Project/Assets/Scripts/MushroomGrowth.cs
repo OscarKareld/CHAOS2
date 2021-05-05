@@ -25,15 +25,16 @@ public class MushroomGrowth : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider car)
+    private void OnTriggerEnter(Collider collider)
     {
-        if (car.transform.gameObject.CompareTag("Car"))
+        if (collider.tag == "Car")
         {
-            CarController cc = car.transform.GetComponentInChildren<CarController>();
-            if (cc != null)
+            GameObject car = collider.gameObject;
+            CarController carcontroller = car.GetComponentInParent<CarController>();
+            if (carcontroller != null)
             {
-                Debug.Log("collided with mushroom");
-            }         
+                Debug.Log("collided with");
+            }
             Destroy(gameObject);
         }
     }

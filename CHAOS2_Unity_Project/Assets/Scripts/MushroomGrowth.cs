@@ -9,6 +9,8 @@ public class MushroomGrowth : MonoBehaviour
     public float z = 1;
 
     public int counter = 1;
+
+    public Color color;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,9 +20,9 @@ public class MushroomGrowth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float growth = Time.deltaTime * 100;
+        float growth = Time.deltaTime * 10;
         counter++;
-        if ((counter % 100) == 0) {
+        if ((counter % 10) == 0) {
             transform.localScale = new Vector3(x += growth, y += growth, z += growth);
         }
     }

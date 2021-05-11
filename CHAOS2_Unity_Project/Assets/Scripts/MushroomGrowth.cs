@@ -25,6 +25,16 @@ public class MushroomGrowth : MonoBehaviour
         if ((counter % 10) == 0) {
             transform.localScale = new Vector3(x += growth, y += growth, z += growth);
         }
+
+        if (counter >= 2000) {
+            var mesh = GetComponentInChildren<MeshRenderer>();
+            mesh.material.color = Color.red;
+            //change color to red
+            //skicka varningsmeddelande som syns för spelaren på skärmen? 
+        }
+        if (counter >= 2500) {
+            //game over
+        }
     }
 
     private void OnTriggerEnter(Collider collider)

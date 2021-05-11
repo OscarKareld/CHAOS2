@@ -203,6 +203,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f5e34f8cbd514e1fb2291a106801da2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &895505963 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6114695616820758554, guid: 3e66642599432284687d270c9d841beb, type: 3}
+  m_PrefabInstance: {fileID: 7322427347260286337}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &965889490 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8752498527385396172, guid: 3e66642599432284687d270c9d841beb, type: 3}
@@ -1386,9 +1391,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3229585508998251549, guid: 3e66642599432284687d270c9d841beb, type: 3}
+      propertyPath: Warning
+      value: 
+      objectReference: {fileID: 895505963}
     - target: {fileID: 4411525924003356217, guid: 3e66642599432284687d270c9d841beb, type: 3}
       propertyPath: m_Name
       value: User Interface
+      objectReference: {fileID: 0}
+    - target: {fileID: 6114695616820758554, guid: 3e66642599432284687d270c9d841beb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6483958243851238837, guid: 3e66642599432284687d270c9d841beb, type: 3}
       propertyPath: m_AnchorMax.x

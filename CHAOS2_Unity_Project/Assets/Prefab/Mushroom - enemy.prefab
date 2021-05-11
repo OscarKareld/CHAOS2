@@ -50,6 +50,7 @@ MonoBehaviour:
   y: 1
   z: 1
   counter: 1
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!54 &1019314290156586669
 Rigidbody:
   m_ObjectHideFlags: 0

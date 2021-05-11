@@ -49,10 +49,10 @@ public class CarController : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= Mathf.Clamp((int)(damage* oldVel*0.6),1,5);
-        if (CheckHealth())
-        {
-            healthBar.SetHealth(currentHealth);
-        }
+     
+        healthBar.SetHealth(currentHealth);
+        CheckHealth();
+
         Debug.Log("Car health is " + currentHealth);
     }
 

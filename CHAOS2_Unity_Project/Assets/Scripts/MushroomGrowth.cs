@@ -11,7 +11,7 @@ public class MushroomGrowth : MonoBehaviour
 
     public float growthCounter = 1f;
 
-    private float redCounter = 5f; //typ 20 sen
+    private float redCounter = 15f; //typ 20 sen
 
     private float warningTextCountdown = 2f;
 
@@ -21,6 +21,8 @@ public class MushroomGrowth : MonoBehaviour
 
 
     private Image warText;
+
+    public GameManage manage;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,13 +32,13 @@ public class MushroomGrowth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float growth = Time.deltaTime * 100;
+        float growth = Time.deltaTime * 10;
         
         growthCounter -= Time.deltaTime;
         redCounter -= Time.deltaTime;
         if (growthCounter <= 0) {
             transform.localScale = new Vector3(x += growth, y += growth, z += growth);
-            growthCounter = 1f;
+            growthCounter = 0.1f;
         }
 
         if (redCounter <= 0) { 
@@ -53,10 +55,15 @@ public class MushroomGrowth : MonoBehaviour
 
             if (warningTextCountdown <= 0 && warningIsShowing == true) {
                 warText.enabled = false;
-                warningTextCountdown = 300;
+                warningTextCountdown = 300; //Sätter denna högt så den aldrig nåt noll igen. Buggbenäget? Jepp.
+            }
+
+            if (redCounter <= -5) {
+                //game over
+                Debug.Log("EXPLOSION");
+                redCounter = 10; // (bara till för att inte spamma i konsollen)
             }
             
-            //TODO: Lägg till game over när någon counter når X. 
         }
         
     }

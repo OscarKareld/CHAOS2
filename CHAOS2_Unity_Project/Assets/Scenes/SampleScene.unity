@@ -1398,6 +1398,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2664265180778527677, guid: fc9a514914c174b499eb91e76fe29b05, type: 3}
+      propertyPath: m_Drag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2664265180778527677, guid: fc9a514914c174b499eb91e76fe29b05, type: 3}
       propertyPath: m_Mass
       value: 500
       objectReference: {fileID: 0}
@@ -1413,6 +1417,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 965889490}
+    - target: {fileID: 4068358023332837792, guid: fc9a514914c174b499eb91e76fe29b05, type: 3}
+      propertyPath: turnSpeed
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 4068358023332837792, guid: fc9a514914c174b499eb91e76fe29b05, type: 3}
       propertyPath: gameManager
       value: 

@@ -32,14 +32,14 @@ public class MushroomGrowth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float growth = Time.deltaTime * 10;
+        float growth = Time.deltaTime; // * 10;
         
         growthCounter -= Time.deltaTime;
         redCounter -= Time.deltaTime;
-        if (growthCounter <= 0) {
+        //if (growthCounter <= 0) {
             transform.localScale = new Vector3(x += growth, y += growth, z += growth);
-            growthCounter = 0.1f;
-        }
+        //    growthCounter = 0.1f;
+        //}
 
         if (redCounter <= 0) { 
             var mesh = GetComponentInChildren<MeshRenderer>();

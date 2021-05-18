@@ -5,15 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class GameManage : MonoBehaviour
 {
+
+    public static GameManage instance;
     bool gamehasEnded = false;
 
     public GameOver gameOver;
 
     public float restartDelay = 2f;
 
+    void Start() {
+        instance = this;
+    }
     public void EndGame()
     {
         Debug.Log("Before if");
+        Debug.Log(gamehasEnded);
+
         if (gamehasEnded == false)
         {
             Debug.Log("Game over");

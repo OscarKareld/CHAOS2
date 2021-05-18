@@ -49,8 +49,9 @@ MonoBehaviour:
   x: 1
   y: 1
   z: 1
-  counter: 1
+  growthCounter: 1
   color: {r: 0, g: 0, b: 0, a: 0}
+  gameManage: {fileID: -2545638162909973340, guid: 0998850cc1b7b4ee3989c143ace6a7dd, type: 3}
 --- !u!54 &1019314290156586669
 Rigidbody:
   m_ObjectHideFlags: 0

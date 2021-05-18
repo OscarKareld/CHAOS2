@@ -23,10 +23,15 @@ public class MushroomGrowth : MonoBehaviour
     private Image warText;
 
     public GameManage gameManage;
+
+    
+
+    
     // Start is called before the first frame update
     void Start()
     {
         warText = GameObject.FindGameObjectWithTag("Warning").GetComponent<Image>();
+        
     }
 
     // Update is called once per frame
@@ -79,6 +84,10 @@ public class MushroomGrowth : MonoBehaviour
             {
                 Debug.Log("collided with");
             }
+            warText.enabled = false;
+
+            carcontroller.incrementMushroomCounter();
+
             Destroy(gameObject);
         }
     }

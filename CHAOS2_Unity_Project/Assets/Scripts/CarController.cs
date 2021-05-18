@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 [RequireComponent(typeof(Rigidbody))]
 
 public class CarController : MonoBehaviour
@@ -18,6 +19,9 @@ public class CarController : MonoBehaviour
     public GameManage gameManager;
     private float oldVel;
 
+    private int mushroomsCollectedCounter = 0;
+    public Text mushroomsCollected;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +29,8 @@ public class CarController : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
 
         m_rigidbody = GetComponent<Rigidbody>();
+
+        mushroomsCollected = GameObject.FindGameObjectWithTag("MushroomCounter").GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -77,6 +83,11 @@ public class CarController : MonoBehaviour
         }
         else
             return true;
+    }
+
+    public void incrementMushroomCounter() {
+        mushroomsCollectedCounter++;
+        mushroomsCollected.text = mushroomsCollectedCounter.ToString();
     }
 
 }

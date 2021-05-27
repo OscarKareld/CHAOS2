@@ -11,7 +11,7 @@ public class MushroomGrowth : MonoBehaviour
 
     public float growthCounter = 1f;
 
-    private float redCounter = 10f; //typ 10 sen
+    private float redCounter = 15f; //typ 10 sen
 
     private float warningTextCountdown = 2f;
 
@@ -63,7 +63,7 @@ public class MushroomGrowth : MonoBehaviour
                 warningTextCountdown = 300; //Sätter denna högt så den aldrig nåt noll igen. Buggbenäget? Jepp.
             }
 
-            if (redCounter <= -8) { //Kanske -10?
+            if (redCounter <= -10) { //Kanske -10?
                 //game over
                 Debug.Log("EXPLOSION");
                 GameManage.instance.EndGame();
